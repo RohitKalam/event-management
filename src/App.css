@@ -1,0 +1,133 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+
+/* .card {
+  padding: 1.5rem;
+} */
+
+.read-the-docs {
+  color: #888;
+}
+
+.hover-effect:hover {
+  background-color: #f8f9fa; /* Light Grey */
+  color: #007bff !important; /* Bootstrap Primary Blue */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-top: 20px;
+    background: #FAFAFA;
+}
+
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg, #FFB64D, #ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg, #FF5370, #ff869a);
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+    border: none;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.m-b-0{
+    margin-bottom: 0;
+}
+.custom-calendar {
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+}
+
+/* Tile design */
+.custom-calendar .react-calendar__tile {
+    border: none; /* Remove default borders */
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Month navigation design */
+.custom-calendar .react-calendar__navigation button {
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 4px;
+    padding: 6px 12px;
+    background: white;
+    transition: 0.2s;
+}
+
+.custom-calendar .react-calendar__navigation button:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    cursor: pointer;
+}
+
+.custom-calendar .react-calendar__tile:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    cursor: pointer;
+}
+
+.bg-c-blue .react-calendar__tile {
+    background-color: #007bff;
+    color: white;
+}
+
+.bg-c-green .react-calendar__tile {
+    background-color: #28a745;
+    color: white;
+}
+
+.bg-c-pink .react-calendar__tile {
+    background-color: #e83e8c;
+    color: white;
+}
+
+.bg-c-yellow .react-calendar__tile {
+    background-color: #ffc107;
+    color: black;
+}
