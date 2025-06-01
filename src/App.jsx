@@ -49,7 +49,7 @@ function App() {
       {!["/Dashboard", "/My-Dashboard", "/index"].some(path => location.pathname.startsWith(path)) && <NavBar />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/event-management" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/vendor-signin" element={<VendorSignin />} />
         <Route path="/user-signin" element={<UserSignin />} />
