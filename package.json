@@ -1,7 +1,6 @@
 {
   "name": "event-management",
   "homepage": "https://RohitKalam.github.io/event-management",
-
   "private": true,
   "version": "0.0.0",
   "type": "module",
