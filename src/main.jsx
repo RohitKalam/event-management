@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 createRoot(document.getElementById('root')).render(
  
-    <BrowserRouter basename='/event-management'>
+    <BrowserRouter >
       <App />
     </BrowserRouter>
  
