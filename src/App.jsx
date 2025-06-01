@@ -50,6 +50,7 @@ function App() {
 
       <Routes>
         <Route path="/event-management" element={<Home />} />
+<Route path="/" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/vendor-signin" element={<VendorSignin />} />
         <Route path="/user-signin" element={<UserSignin />} />
