@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaHome, FaUser, FaCog, FaSignOutAlt, FaUtensils, FaCamera, FaMapMarkerAlt, FaClipboardList, FaEnvelope, FaCalendar  } from "react-icons/fa";
+import { FaHome, FaUser, FaUsers, FaCog, FaSignOutAlt, FaUtensils, FaCamera, FaMapMarkerAlt, FaClipboardList, FaEnvelope, FaCalendar  } from "react-icons/fa";
 
 const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -40,14 +40,10 @@ const Sidebar = () => {
         {isHovered && <span className="ms-3">Messages</span>}
       </Link>
 
-      <Link to="/Dashboard/caterers" className="nav-link text-dark d-flex align-items-center p-2 hover-effect">
-        <FaUtensils size={14} />
-        {isHovered && <span className="ms-3">Caterers</span>}
-      </Link>
-
-      <Link to="/Dashboard/photographers" className="nav-link text-dark d-flex align-items-center p-2 hover-effect">
-        <FaCamera size={14} />
-        {isHovered && <span className="ms-3">Photographers</span>}
+      <Link to="/Dashboard/collaborators" className="nav-link text-dark d-flex align-items-center p-2 hover-effect">
+        <FaUsers size={14} />
+        {/* <i className="bi bi-people"></i> */}
+        {isHovered && <span className="ms-3">Collaborators</span>}
       </Link>
 
       <Link to="/Dashboard/venues" className="nav-link text-dark d-flex align-items-center p-2 hover-effect">

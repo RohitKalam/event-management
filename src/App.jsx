@@ -15,8 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Profile from "./components/Organizer/Profile";
 import Settings from "./components/Organizer/Settings";
 import NotFound from "./components/NotFound"; // Import Error Page
-import Caterers from "./components/Organizer/Caterers"
-import Photographers from "./components/Organizer/Photographers"
+
 import Venues from "./components/Organizer/Venues"
 import EventRequests from "./components/Organizer/EventRequests"
 import Logout from "./components/Organizer/Logout";
@@ -39,6 +38,7 @@ import UserSettings from "./components/User/UserSettings";
 import CreateEvent from "./components/User/CreateEvent";
 import OMessages from "./components/Organizer/OMessages"
 import EventDetails from "./components/Organizer/EventDetails";
+import Collaborators from "./components/Organizer/Collaborators";
 function App() {
   const location = useLocation();
   //localStorage.clear();
@@ -49,28 +49,29 @@ function App() {
       {!["/Dashboard", "/My-Dashboard", "/index"].some(path => location.pathname.startsWith(path)) && <NavBar />}
 
       <Routes>
-       
-<Route path="/" element={<Home />} />
+
+        <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/vendor-signin" element={<VendorSignin />} />
         <Route path="/user-signin" element={<UserSignin />} />
         <Route path="/user-signup" element={<UserSignUp />} />
 
         <Route path="/register" element={<RegisterEM />} />
-          <Route path="forgot-password" element={<ForgotPass />} />
+        <Route path="forgot-password" element={<ForgotPass />} />
 
         {/* Protected Dashboard Route with Nested Routes - Event Organizer */}
         <Route path="/Dashboard" element={<ProtectedRoute />}>
           <Route index element={<OrgDash />} />
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="caterers" element={<Caterers />} />
+         
           <Route path="messages" element={<OMessages />} />
-          <Route path="photographers" element={<Photographers />} />
+        
           <Route path="venues" element={<Venues />} />
           <Route path="event-requests" element={<EventRequests />} />
           <Route path="logout" element={<Logout />} />
           <Route path="events" element={<EventDetails />} />
+          <Route path="collaborators" element={<Collaborators />} />
         </Route>
 
         {/* Protected Dashboard Route with Nested Routes - Service Providers */}
@@ -81,7 +82,7 @@ function App() {
           <Route path="orders" element={<VendorOrders />} />
           <Route path="settings" element={<VendorSettings />} />
           <Route path="logout" element={<VLogout />} />
-         
+
         </Route>
         {/* Protected Dashboard Route with Nested Routes - users */}
         <Route path="/index" element={<ProtectedRoute />}>
@@ -93,7 +94,7 @@ function App() {
           <Route path="Bookings" element={<UserBookings />} />
           <Route path="Settings" element={<UserSettings />} />
           <Route path="create-event" element={<CreateEvent />} />
-         
+
         </Route>
 
         {/* Catch-All Route for Unknown Paths */}
